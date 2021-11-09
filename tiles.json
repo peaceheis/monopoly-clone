@@ -1,0 +1,25 @@
+{ 
+    "properties": {
+      "0": {
+          "name": "GO",
+          "drawfunc": "draw_go()",
+          "actionfunc": "go()"
+      }, 
+      "1": {
+          "name": "Baltic Avenue",
+          "create": "Property('Baltic Avenue', 'Brown', 200)", 
+          "drawfunc": "draw(name='Baltic Avenue', group='Brown')",
+          "actionfunc": "on_property()"
+      },
+      "2": {
+          "name": "Community Chest",
+          "drawfunc": "draw"
+      }, 
+      "3": {
+          "name": "Mediterranean Avenue", 
+          "create": ""
+      }
+      
+
+    }
+  } 

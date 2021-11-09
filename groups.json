@@ -1,0 +1,12 @@
+{
+    "groups": {
+        "Brown": {
+            "name": "brown",
+            "color": "#75543F"
+        }, 
+        "Light Blue": {
+            "name": "light blue",
+            "color": "#09D4EB"
+        }
+    }
+}
