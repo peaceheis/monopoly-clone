@@ -2,11 +2,43 @@
     "groups": {
         "Brown": {
             "name": "brown",
-            "color": "#75543F"
+            "color": "#75543F",
+            "house cost": 50
         }, 
         "Light Blue": {
             "name": "light blue",
-            "color": "#09D4EB"
+            "color": "#09D4EB", 
+            "house cost": 50
+        }, 
+        "Pink": {
+            "name": "pink", 
+            "color": "#d313d6", 
+            "house cost": 100
+        }, 
+        "Orange": {
+            "name": "orange", 
+            "color": "#ffab19",
+            "house cost": 100
+        }, 
+        "Red": {
+            "name": "red", 
+            "color": "#eb4034", 
+            "house cost": 150
+        }, 
+        "Yellow": {
+            "name": "yellow", 
+            "color": "#fff203", 
+            "house cost": 150
+        }, 
+        "Green": {
+            "name": "green", 
+            "color": "#349623", 
+            "house cost": 200
+        }, 
+        "Dark Blue": {
+            "name": "dark blue", 
+            "color": "#2b35c4", 
+            "house cost": 200
         }
     }
 }

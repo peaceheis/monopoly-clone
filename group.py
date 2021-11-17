@@ -1,10 +1,10 @@
 import json
 
-
 class Group: 
-    def __init__(self, name, color: str): 
+    def __init__(self, name, color: str, house_cost: int): 
         self.color = color
         self.name = name
+        self.house_cost = house_cost
         self.properties = []
         self.num_properties = 0
         
@@ -12,14 +12,13 @@ class Group:
         self.properties.append(property)
         self.num_properties += 1
         
-def initalize_groups(): 
-    groups = json.load(open("groups.json"))["groups"]
-    print(groups)
+def initalize_groups() -> list: 
+    groups: dict = json.load(open("groups.json"))["groups"]
+
     initalized_groups = []
-    for group in groups: 
-        print(group)
-        initalized_groups.append(Group(group["name"], group["color"]))
+    for val in groups.values() : 
+        prop = Group(val["name"], val["color"], val["house cost"])
+        initalized_groups.append(prop)
 
     return initalized_groups 
     
-print(initalize_groups())

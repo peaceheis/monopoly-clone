@@ -1,25 +1,150 @@
-{ 
-    "properties": {
-      "0": {
-          "name": "GO",
-          "drawfunc": "draw_go()",
-          "actionfunc": "go()"
+{   
+  "properties": {
+      "streets": {
+        "1": {
+            "name": "Baltic Avenue",
+            "group": "brown", 
+            "cost": 60, 
+            "rent": [4, 20, 60, 180, 320, 450]
+        },
+        "3": {
+            "name": "Mediterranean Avenue", 
+            "group": "brown", 
+            "cost": 60, 
+            "rent": [2, 10, 30, 90, 160, 250]
+        }, 
+        "6": {
+            "name": "Oriental Avenue", 
+            "group": "light blue", 
+            "cost": 100, 
+            "rent": [6, 30, 90, 270, 400, 550]
+        }, 
+        "8": {
+            "name": "Vermont Avenue", 
+            "group": "light blue", 
+            "cost": 100,
+            "rent": [6, 30, 90, 270, 400, 550]
+        }, 
+        "9": {
+            "name": "Connecticut Avenue", 
+            "group": "light blue", 
+            "cost": 120, 
+            "rent": [8, 40, 100, 300, 450, 600]
+        }, 
+        "11": {
+            "name": "St. Charles Place", 
+            "group": "pink", 
+            "cost": 140, 
+            "rent": [10, 50, 150, 450, 625, 750]
+        }, 
+        "13": {
+            "name": "States Avenue", 
+            "group": "pink", 
+            "cost": 140, 
+            "rent": [10, 50, 150, 450, 625, 750]
+        }, 
+        "14": {
+            "name": "Virginia Avenue", 
+            "group": "pink", 
+            "cost": 160, 
+            "rent": [12, 60, 180, 500, 700, 900]
+        }, 
+        "16": {
+            "name": "St. James Place", 
+            "group": "orange", 
+            "cost": 180, 
+            "rent": [14, 70, 200, 550, 750, 950]
+        }, 
+        "18": {
+            "name": "Tennessee Avenue", 
+            "group": "orange", 
+            "cost": 180, 
+            "rent": [14, 70, 200, 550, 750, 950]
+        }, 
+        "19": {
+            "name": "New York Avenue", 
+            "group": "orange", 
+            "cost": 200, 
+            "rent": [16, 80, 200, 600, 800]
+        }, 
+        "21": {
+            "name": "Kentucky Avenue", 
+            "group": "red", 
+            "cost": 220, 
+            "rent": [18, 90, 250, 700, 875]
+        }, 
+        "23": {
+            "name": "Indiana Avenue", 
+            "group": "red", 
+            "cost": 220
+        }, 
+        "24": {
+            "name": "Illinois Avenue", 
+            "group": "red", 
+            "cost": 240
+        }, 
+        "26": { 
+            "name": "Atlantic Avenue", 
+            "group": "yellow", 
+            "cost": 260
+        }, 
+        "27": {
+          "name": "Ventnor Avenue", 
+          "group": "yellow", 
+          "cost": 260
+        }, 
+      "29": {
+          "name": "Marvin Gardens", 
+          "group": "yellow", 
+          "cost": 280
+        }, 
+        "31": {
+          "name": "Pacific Avenue", 
+          "group": "green", 
+          "cost": 300
+        }, 
+        "32": {
+          "name": "North Carolina Avenue", 
+          "group": "green", 
+          "cost": 300
+        }, 
+        "34": {
+          "name": "Pennsylvania Avenue", 
+          "group": "green", 
+          "cost": 320
+        }, 
+        "37": {
+          "name": "Park Place", 
+          "group": "dark blue", 
+          "cost": 350
+        }, 
+        "39": {
+          "name": "Boardwalk", 
+          "group": "dark blue", 
+          "cost": 400
+        }
       }, 
-      "1": {
-          "name": "Baltic Avenue",
-          "create": "Property('Baltic Avenue', 'Brown', 200)", 
-          "drawfunc": "draw(name='Baltic Avenue', group='Brown')",
-          "actionfunc": "on_property()"
-      },
-      "2": {
-          "name": "Community Chest",
-          "drawfunc": "draw"
-      }, 
-      "3": {
-          "name": "Mediterranean Avenue", 
-          "create": ""
-      }
-      
-
+      "railroads": {
+        "5": "Reading", 
+        "15": "Pennsylvania",
+        "25": "B&O", 
+        "35": "Short"
+    }, 
+      "utilities": {
+        "12": "Electric Company",
+        "28": "Water Works"
     }
-  } 
+  }, 
+  "actions": {
+    "chance": {
+      "7": "#d313d6", 
+      "22": "#09D4EB" 
+    }, 
+    "community chest": [2, 33], 
+    "tax": {
+      "4": "Income Tax", 
+      "38": "Luxury Tax"
+    }
+  }
+
+} 
