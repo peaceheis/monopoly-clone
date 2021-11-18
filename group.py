@@ -12,13 +12,5 @@ class Group:
         self.properties.append(property)
         self.num_properties += 1
         
-def initalize_groups() -> list: 
-    groups: dict = json.load(open("groups.json"))["groups"]
 
-    initalized_groups = []
-    for val in groups.values() : 
-        prop = Group(val["name"], val["color"], val["house cost"])
-        initalized_groups.append(prop)
-
-    return initalized_groups 
     

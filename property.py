@@ -2,7 +2,7 @@ import json
 from tile import Tile
 
 class Property(Tile): 
-    def __init__(self, name, price, house_price, hotel_price, group, is_owned=False, owner=None, rent = [], num_houses=0, is_mortgaged =False): 
+    def __init__(self, name, price, house_price, hotel_price, group, is_owned=False, is_mortgaged=1, owner=None, rent = [], num_houses=0, is_mortgaged =False): 
         self.name = name
         self.price = price
         self.house_price = house_price
@@ -22,13 +22,19 @@ class Property(Tile):
         elif self.is_mortgaged: 
             return f"{player.name} landed on mortgaged property, {self.name}"
         else: 
-            player.deduct()
+            return player.deduct(self.rent[self.num_houses] * self.is_mortgaged)
         
     def develop(self, player): 
-        player.deduct(self.group.house_cost)
+        player.charge(self.group.house_cost)
         self.num_houses += 1
 
+    def mortgage(self, player): 
+        self.is_mortgaged = 0
+        player.add(self.price / 2)
 
+    def unmortgage(self, player): 
+        self.is_mortgaged = 1
+        player.charge(self.price * 1.10)
 
     def buy(self, player): 
         player.deduct(self.price)

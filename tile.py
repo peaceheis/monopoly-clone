@@ -1,9 +1,9 @@
 import json 
 
 class Tile: 
-    def __init__(self, position): 
-        self.position = position
+    def __init__(self): 
+        pass
 
     #land on the property
-    def land(self): 
+    def land(self, player): 
         pass #for subclasses
