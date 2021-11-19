@@ -1,22 +1,24 @@
 import json
 from tile import Tile
 
-class Property(Tile): 
-    def __init__(self, name, price, house_price, hotel_price, group, is_owned=False, is_mortgaged=1, owner=None, rent = [], num_houses=0, is_mortgaged =False): 
+class Property(Tile):  
+    #this isn't the best object orientation, but the base property class is essentially Streets. 
+    #in better OO you'd have a base class everything inherits from.
+    def __init__(self, name, position, price, house_price, group, is_owned=False, is_mortgaged=1, owner=None, rent = [], num_houses=0): 
         self.name = name
+        self.position = position
         self.price = price
         self.house_price = house_price
-        self.hotel_price = hotel_price
         self.group = group
-        group.add(self)
         self.is_owned = is_owned
         self.owner=owner
         self.rent: list = rent
         self.num_houses = num_houses 
         self.is_mortgaged = is_mortgaged
+        group["properties"].append(self)
         #there's a lot to properties!
     
-    def land(self, player): 
+    def land(self, player, game): 
         if player.owns(self): 
             return f"{player.name} landed on {self.name}, which belongs to them."
         elif self.is_mortgaged: 
