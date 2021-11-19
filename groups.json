@@ -1,44 +1,44 @@
 {
     "groups": {
-        "Brown": {
-            "name": "brown",
+        "brown": {
             "color": "#75543F",
-            "house cost": 50
+            "house cost": 50, 
+            "properties": []
         }, 
-        "Light Blue": {
-            "name": "light blue",
+        "light blue": {
             "color": "#09D4EB", 
-            "house cost": 50
+            "house cost": 50, 
+            "properties": []
         }, 
-        "Pink": {
-            "name": "pink", 
+        "pink": {
             "color": "#d313d6", 
-            "house cost": 100
+            "house cost": 100,
+            "properties": []
         }, 
-        "Orange": {
-            "name": "orange", 
+        "orange": {
             "color": "#ffab19",
-            "house cost": 100
+            "house cost": 100,
+            "properties": []
         }, 
-        "Red": {
-            "name": "red", 
+        "red": {
             "color": "#eb4034", 
-            "house cost": 150
+            "house cost": 150,
+            "properties": []
         }, 
-        "Yellow": {
-            "name": "yellow", 
+        "yellow": {
             "color": "#fff203", 
-            "house cost": 150
+            "house cost": 150,
+            "properties": []
         }, 
-        "Green": {
-            "name": "green", 
+        "green": {
             "color": "#349623", 
-            "house cost": 200
+            "house cost": 200,
+            "properties": []
         }, 
-        "Dark Blue": {
-            "name": "dark blue", 
+        "dark blue": {
             "color": "#2b35c4", 
-            "house cost": 200
+            "house cost": 200,
+            "properties": []
         }
     }
 }
