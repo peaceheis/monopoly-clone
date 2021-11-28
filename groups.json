@@ -1,41 +1,49 @@
 {
     "groups": {
         "brown": {
+            "name": "brown",
             "color": "#75543F",
             "house cost": 50, 
             "properties": []
         }, 
         "light blue": {
+            "name": "light blue",
             "color": "#09D4EB", 
             "house cost": 50, 
             "properties": []
         }, 
         "pink": {
+            "name": "pink",
             "color": "#d313d6", 
             "house cost": 100,
             "properties": []
         }, 
         "orange": {
+            "name": "orange",
             "color": "#ffab19",
             "house cost": 100,
             "properties": []
         }, 
         "red": {
+            "name": "red",
             "color": "#eb4034", 
             "house cost": 150,
             "properties": []
         }, 
         "yellow": {
+            "name": "yellow",
             "color": "#fff203", 
             "house cost": 150,
             "properties": []
         }, 
         "green": {
+            "name": "green",
             "color": "#349623", 
             "house cost": 200,
             "properties": []
         }, 
         "dark blue": {
+            "name": "dark blue",
             "color": "#2b35c4", 
             "house cost": 200,
             "properties": []

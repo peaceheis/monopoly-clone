@@ -162,21 +162,21 @@
   "actions": {
     "chance": {
       "7": "#d313d6", 
-      "22": "#09D4EB", 
-      "funcs": "chance"
+      "22": "#09D4EB" 
     }, 
     "community chest": {
-      "locs": [2, 33],
-      "funcs": "commchest" 
-    }, 
-    "tax": {
-      "4": {
-        "Income Tax": 200
-      },
-      "38": {
-        "Luxury Tax": 75
-      }
+      "locs": [2, 33]
     }
+  },
+  "corners": {
+    "0": "go",
+    "10": "Just Visiting",
+    "20": "Free Parking",
+    "30":  "Go To Jail"
+  },
+  "tax": {
+    "4": ["Income Tax", 200],
+    "38": ["Luxury Tax", 75]
   }
 
 } 
